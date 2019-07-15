@@ -1,7 +1,8 @@
-import java.util.*;
-
 public interface PokemonInterface {
-    Pokemon createPokemon(String name, int health, String type);
-    void attackPokemon(Pokemon pokemon);
-    void PokemonInfo(Pokemon pokemon);
+    // your code here
+	Pokemon createPokemon(String name, String type, int health);
+
+	void attackPokemon(Pokemon pokemon);
+
+	void pokemonInfo(Pokemon pokemon);
 }

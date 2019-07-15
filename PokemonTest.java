@@ -1,14 +1,13 @@
-public class PokemonTest extends Pokemon{
+public class PokemonTest extends Pokedex {
 
 	public static void main(String[] args) {
-        Pokedex pd = new Pokedex();
-        Pokemon squirtle = pd.createPokemon("squirtle", "water", 65);
-        Pokemon balbasuar = pd.createPokemon("balbasaur", "fire", 70);
-        pd.attackPokemon(balbasuar);
-        pd.pokemonInfo(balbasuar);
-        pd.attackPokemon(squirtle);
-        pd.pokemonInfo(squirtle);
-        System.out.println("\nNumber of Pokemon created so far: "+Pokemon.getCount()); 
+		Pokedex pokedex = new Pokedex();
+		Pokemon eerie = pokedex.createPokemon("Eerie", "electric", 120);
+		Pokemon pikachu = pokedex.createPokemon("Pikachu", "fire", 50);
+
+		pokedex.attackPokemon(eerie);
+		pokedex.pokemonInfo(eerie);
+		pokedex.pokemonInfo(pikachu);
 	}
 
 }
